@@ -107,15 +107,16 @@ body{
 ========================== */
 
 .hero{
-    width:90%;
-    max-width:1300px;
-    margin:auto;
-    min-height:85vh;
+    position: relative;
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    min-height: 85vh;
 
-    display:grid;
-    grid-template-columns:1fr 1fr 1fr;
-    align-items:center;
-    gap:40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    gap: 40px;
 }
 
 /* LEFT */
@@ -123,28 +124,36 @@ h4{
     color: #9A9AA8;
 }
 
+.hero-left{
+    position: relative;
+}
+
 .hero-left h3{
-    font-size:52px;
     color:#9A9AA8;
+    font-size:52px;
     font-weight:300;
-    margin-bottom:10px;
+    position:relative;
+    z-index:3;
 }
 
 .hero-left h1{
-
+    color:#fff;
     font-size:72px;
     line-height:1;
-    color:#ffffff;
-    font-weight:700;
-    margin-bottom:25px;
+    position:relative;
+
+    z-index:1;
+
+    margin-right:-160px;
 }
 
 .hero-left p{
-
     width:320px;
     color:#9C9CA7;
     line-height:28px;
-    font-size:15px;
+
+    position:relative;
+    z-index:3;
 }
 
 /* ================= IMAGE ================= */
@@ -159,18 +168,14 @@ h4{
     margin: auto;
 }
 
-/* Main Circle */
-
-
-
 /* Large faded shadow */
 
 .hero-image::after{
     content: "";
     position: absolute;
 
-    width: 560px;
-    height: 560px;
+    width: 540px;
+    height: 540px;
 
     border-radius: 50%;
 
@@ -181,7 +186,7 @@ h4{
 
 .hero-image img{
     position: relative;
-    width: 355px;
+    width: 360px;
     z-index: 2;
 }
 
